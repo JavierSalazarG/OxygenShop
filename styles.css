@@ -249,4 +249,27 @@ body {
   color: white;
 }
 
+.border__green {
+  border: 1px solid #55dfb4;
+}
+
+.border__blue {
+  border: 1px solid #08a6e4;
+}
+
+.border__blue:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 7px #08a6e4;
+}
+
+.border__green:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 7px #55dfb4;
+}
+
+.border__pink:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 7px #fb3b64;
+}
+
 /*# sourceMappingURL=styles.css.map */

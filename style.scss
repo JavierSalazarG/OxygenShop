@@ -267,4 +267,25 @@ body {
   color: white;
 }
 
+.border__green {
+  border: 1px solid $color-green;
+}
+
+.border__blue {
+  border: 1px solid $color-blue;
+}
+
+.border__blue:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 7px $color-blue;
+}
+.border__green:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 7px $color-green;
+}
+
+.border__pink:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 7px $color-pink;
+}
 //------
