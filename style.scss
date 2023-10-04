@@ -55,7 +55,7 @@ body {
   display: none;
 }
 
-//header----
+//----------
 
 .main {
   width: 100%;
@@ -436,10 +436,12 @@ body {
     height: 100%;
     display: flex;
     align-items: center;
+    color: #929292;
   }
 
   .nav__opcion:hover {
     border-bottom: 2px solid $color-blue;
+    color: black;
   }
 
   .nav__menu {
@@ -515,6 +517,11 @@ body {
     justify-content: space-evenly;
     margin: 0 auto;
     margin-top: 5rem;
+    width: 40%;
     margin-bottom: 5rem;
+  }
+
+  .form {
+    width: 45vh;
   }
 }
