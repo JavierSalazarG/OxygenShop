@@ -436,6 +436,29 @@ body {
     width: 100%;
     justify-content: space-around;
   }
+  .div__general_box_precing {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .box__general_pricing {
+    width: 30%;
+    height: 31.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .opcion__pricing {
+    height: 22rem;
+    text-align: center;
+    align-content: space-between;
+  }
+  .opcion__pricing p {
+    margin-top: 2rem;
+  }
+  .button__precing {
+    top: 30rem;
+  }
 }
 @media screen and (min-width: 1150px) {
   .nav__opcions {
@@ -472,8 +495,21 @@ body {
     width: 40%;
     margin-bottom: 5rem;
   }
+  .div__general_box_precing {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .box__general_pricing {
+    width: 25rem;
+  }
   .form {
     width: 45vh;
+  }
+}
+@media screen and (min-width: 1946px) {
+  .div__general_box_precing {
+    width: 70%;
+    margin: 0 auto;
   }
 }
 
