@@ -174,7 +174,7 @@ body {
 }
 
 .container__img {
-  margin-top: 2rem;
+  margin-top: 3rem;
   width: 100%;
   align-items: center;
   position: relative;
@@ -436,6 +436,10 @@ body {
 @media screen and (min-width: 1150px) {
   .nav__opcions {
     width: 35%;
+  }
+  .footer {
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
 }
 

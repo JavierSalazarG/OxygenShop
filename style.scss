@@ -187,7 +187,7 @@ body {
 }
 
 .container__img {
-  margin-top: 2rem;
+  margin-top: 3rem;
   width: 100%;
   align-items: center;
   position: relative;
@@ -468,6 +468,10 @@ body {
     justify-content: space-around;
   }
   //------
+
+  //always_first ---------
+
+  //------
 }
 
 @media screen and (min-width: 1150px) {
@@ -477,4 +481,11 @@ body {
   }
 
   //----
+
+  //footer-----
+  .footer {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  //--------
 }
