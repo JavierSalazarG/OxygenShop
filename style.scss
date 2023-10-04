@@ -131,6 +131,10 @@ body {
   padding-top: 2rem;
   text-align: center;
 }
+.div__objets_popular {
+  display: flex;
+  flex-direction: column;
+}
 
 .section__most_popular h2 {
   font-weight: 400;
@@ -456,10 +460,21 @@ body {
   }
 
   //---------------
+  //the most popular----------
+  .div__objets_popular {
+    margin-top: 3rem;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+  }
+  //------
 }
 
 @media screen and (min-width: 1150px) {
+  //header----
   .nav__opcions {
     width: 35%;
   }
+
+  //----
 }
