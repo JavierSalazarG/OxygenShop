@@ -110,8 +110,15 @@ body {
   width: 100%;
 }
 
-.span__pc1 img {
+.img__bg_movile {
   display: block;
+}
+
+.img__bg_pc {
+  display: none;
+}
+
+.img__bg {
   width: 100%;
   object-fit: cover;
 }
@@ -406,6 +413,8 @@ body {
 //----
 
 @media screen and (min-width: 840px) {
+  //Header-----------
+
   .nav__opcions {
     display: flex;
     width: 40%;
@@ -430,6 +439,23 @@ body {
   .nav__menu {
     display: none;
   }
+
+  //--------------
+  //Sell More --------------------
+
+  .button__shop {
+    width: 40%;
+  }
+
+  .img__bg_pc {
+    display: inline;
+  }
+
+  .img__bg_movile {
+    display: none;
+  }
+
+  //---------------
 }
 
 @media screen and (min-width: 1150px) {
