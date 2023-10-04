@@ -437,6 +437,10 @@ body {
   .nav__opcions {
     width: 35%;
   }
+  .footer {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
