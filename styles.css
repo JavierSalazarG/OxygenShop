@@ -441,6 +441,12 @@ body {
   .nav__opcions {
     width: 35%;
   }
+  .div__general_box_precing {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+  }
   .section__form {
     display: flex;
     flex-direction: row;
