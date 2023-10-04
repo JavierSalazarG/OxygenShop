@@ -44,6 +44,7 @@ body {
 
 .title {
   font-size: 2rem;
+  cursor: pointer;
 }
 
 .main {
@@ -246,6 +247,7 @@ body {
   left: 30%;
   width: 40%;
   height: 3rem;
+  cursor: pointer;
   border: none;
   border-radius: 20px;
   color: white;
@@ -348,6 +350,7 @@ body {
   float: right;
   margin-top: 2rem;
   box-shadow: 0 5px 7px #08a6e4;
+  cursor: pointer;
 }
 
 .button__send:hover {
@@ -355,6 +358,25 @@ body {
   transform: scale(1.05);
   color: #08a6e4;
   background-color: white;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.25);
+  padding: 2rem;
+  justify-content: space-between;
+}
+
+.h2__title_footer {
+  color: #08a6e4;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.p__copyright {
+  color: #c0c0c0;
+  font-size: 0.7rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
