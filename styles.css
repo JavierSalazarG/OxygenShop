@@ -343,12 +343,14 @@ body {
 .div__accept_consent {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   margin-top: 2rem;
 }
 
 .input__checkbox {
   width: 100%;
   align-self: flex-start;
+  justify-content: flex-end;
 }
 
 .label__conditions {
@@ -437,9 +439,29 @@ body {
   .nav__opcions {
     width: 35%;
   }
+  .section__form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 60%;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  .form {
+    width: 50%;
+  }
   .footer {
     padding-left: 5rem;
     padding-right: 5rem;
+  }
+}
+@media screen and (min-width: 1450px) {
+  .section__form {
+    justify-content: space-evenly;
+    margin: 0 auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
   }
 }
 
