@@ -47,6 +47,10 @@ body {
   cursor: pointer;
 }
 
+.nav__opcions {
+  display: none;
+}
+
 .main {
   width: 100%;
   display: flex;
@@ -377,6 +381,35 @@ body {
 .p__copyright {
   color: #c0c0c0;
   font-size: 0.7rem;
+}
+
+@media screen and (min-width: 840px) {
+  .nav__opcions {
+    display: flex;
+    width: 40%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .nav__opcion {
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .nav__opcion:hover {
+    border-bottom: 2px solid #08a6e4;
+  }
+  .nav__menu {
+    display: none;
+  }
+}
+@media screen and (min-width: 1150px) {
+  .nav__opcions {
+    width: 35%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
