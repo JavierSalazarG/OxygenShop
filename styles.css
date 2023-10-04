@@ -102,8 +102,15 @@ body {
   width: 100%;
 }
 
-.span__pc1 img {
+.img__bg_movile {
   display: block;
+}
+
+.img__bg_pc {
+  display: none;
+}
+
+.img__bg {
   width: 100%;
   object-fit: cover;
 }
@@ -403,6 +410,15 @@ body {
     border-bottom: 2px solid #08a6e4;
   }
   .nav__menu {
+    display: none;
+  }
+  .button__shop {
+    width: 40%;
+  }
+  .img__bg_pc {
+    display: inline;
+  }
+  .img__bg_movile {
     display: none;
   }
 }
