@@ -454,7 +454,6 @@ body {
     width: 100%;
     justify-content: space-around;
   }
-  
   .div__always_first {
     flex-direction: row-reverse;
     justify-content: space-evenly;
@@ -510,7 +509,7 @@ body {
   .container__text_cart_trumpet {
     padding-top: 20px;
     padding-bottom: 20px;
-=======
+  }
   .div__general_box_precing {
     display: flex;
     flex-direction: row;
@@ -533,7 +532,6 @@ body {
   }
   .button__precing {
     top: 30rem;
-
   }
 }
 @media screen and (min-width: 1150px) {
@@ -580,6 +578,9 @@ body {
   }
   .form {
     width: 45vh;
+  }
+  .container__text_cart_trumpet {
+    width: 40%;
   }
 }
 @media screen and (min-width: 1946px) {
