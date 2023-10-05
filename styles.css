@@ -579,6 +579,9 @@ body {
   .form {
     width: 45vh;
   }
+  .container__text_cart_trumpet {
+    width: 40%;
+  }
 }
 @media screen and (min-width: 1946px) {
   .div__general_box_precing {
