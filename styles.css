@@ -169,8 +169,23 @@ body {
   background-color: white;
   border: 1px solid rgba(204, 204, 204, 0.555);
   border-radius: 5px;
-  padding: 1rem;
+  display: flex;
+  flex-direction: column;
   margin-bottom: 2rem;
+}
+
+.div__aways_trumpet {
+  border: none;
+  background-color: transparent;
+}
+
+.container__text_cart_trumpet {
+  background-color: white;
+  border: 1px solid rgba(204, 204, 204, 0.555);
+}
+
+.container__text_cart {
+  padding: 1rem;
 }
 
 .container__img {
@@ -184,6 +199,8 @@ body {
 .container__img_trumpet {
   background-color: #55dfb4;
   width: 100%;
+  box-sizing: content-box;
+  margin-top: 0;
 }
 
 .img_below {
@@ -202,6 +219,7 @@ body {
 .img__trumpet {
   top: 2rem;
   left: -10%;
+  width: 70%;
 }
 
 .div__always_first h2 {
@@ -436,6 +454,63 @@ body {
     width: 100%;
     justify-content: space-around;
   }
+  
+  .div__always_first {
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .container__text_cart {
+    width: 26rem;
+  }
+  .div__always_first_movile {
+    flex-direction: row;
+  }
+  .container__img {
+    width: 40%;
+  }
+  .img_up {
+    width: 300px;
+  }
+  .img__img1 {
+    left: 60%;
+  }
+  .img__img2 {
+    width: 25vh;
+  }
+  .div__line_style_pink {
+    width: 80%;
+    height: 2px;
+    background-color: #fb3b64;
+    margin: 2rem;
+    margin-left: 0;
+  }
+  .div__line_style_blue {
+    width: 80%;
+    height: 2px;
+    background-color: #08a6e4;
+    margin: 2rem;
+    margin-left: 0;
+  }
+  .div__line_style_green {
+    width: 80%;
+    height: 2px;
+    background-color: #55dfb4;
+    margin: 2rem;
+    margin-left: 0;
+  }
+  .div__aways_trumpet {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .container__text_cart_trumpet {
+    padding-top: 20px;
+    padding-bottom: 20px;
+=======
   .div__general_box_precing {
     display: flex;
     flex-direction: row;
@@ -458,6 +533,7 @@ body {
   }
   .button__precing {
     top: 30rem;
+
   }
 }
 @media screen and (min-width: 1150px) {
