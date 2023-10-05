@@ -182,10 +182,12 @@ body {
   background-color: white;
   border: 1px solid rgba(204, 204, 204, 0.555);
   border-radius: 5px;
-  padding: 1rem;
+
   margin-bottom: 2rem;
 }
-
+.container__text_cart {
+  padding: 1rem;
+}
 .container__img {
   margin-top: 3rem;
   width: 100%;
@@ -197,6 +199,7 @@ body {
 .container__img_trumpet {
   background-color: #55dfb4;
   width: 100%;
+  box-sizing: content-box;
 }
 .img_below {
   position: absolute;
