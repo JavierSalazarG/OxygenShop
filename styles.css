@@ -470,6 +470,7 @@ body {
   }
   .container__img {
     width: 40%;
+    margin-bottom: 2rem
   }
   .img_up {
     width: 300px;
