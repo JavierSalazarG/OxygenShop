@@ -493,10 +493,15 @@ body {
     flex-direction: row;
   }
   .container__img {
+
     max-width: 40%;
   }
   .img_below {
     width: 100%;
+
+    width: 40%;
+    margin-bottom: 2rem
+
   }
   .img_up {
     width: 100%;
@@ -621,6 +626,9 @@ body {
   }
   .form {
     width: 45vh;
+  }
+  .container__text_cart_trumpet {
+    width: 40%;
   }
 }
 @media screen and (min-width: 1946px) {
