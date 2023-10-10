@@ -254,6 +254,7 @@ body {
 
 .box__general_pricing {
   border: 1px solid $color-pink;
+  margin: 0 auto;
   margin-top: 3rem;
   border-radius: 20px;
   display: flex;
@@ -261,6 +262,7 @@ body {
   padding: 1rem;
   padding-bottom: 2rem;
   position: relative;
+  max-width: 400px;
 }
 
 .money {
