@@ -671,7 +671,11 @@ body {
   }
   //--------
 }
-
+@media screen and (min-width: 1219px) {
+  .img__trumpet {
+    max-width: 22rem;
+  }
+}
 @media screen and (min-width: 1450px) {
   .section__form {
     justify-content: space-evenly;
