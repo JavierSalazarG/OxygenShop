@@ -169,6 +169,8 @@ body {
   background-color: white;
   border: 1px solid rgba(204, 204, 204, 0.555);
   border-radius: 5px;
+  max-width: 19.625em;
+  height: 24rem;
   display: flex;
   flex-direction: column;
   margin-bottom: 2rem;
@@ -186,6 +188,9 @@ body {
 
 .container__text_cart {
   padding: 1rem;
+  font-family: Open Sans;
+  font-size: 14px;
+  padding-top: 0;
 }
 
 .container__img {
@@ -194,6 +199,10 @@ body {
   align-items: center;
   position: relative;
   text-align: center;
+}
+
+.container_img_movile {
+  margin-top: 0.5rem;
 }
 
 .container__img_trumpet {
@@ -223,9 +232,10 @@ body {
 }
 
 .div__always_first h2 {
-  font-weight: 400;
+  font-weight: 500;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  font-size: 30px;
 }
 
 .section__pricing {
@@ -249,7 +259,7 @@ body {
   padding: 1rem;
   padding-bottom: 2rem;
   position: relative;
-  max-width: 400px;
+  max-width: 25rem;
 }
 
 .money {
@@ -460,6 +470,7 @@ body {
     flex-direction: row-reverse;
     justify-content: space-evenly;
     width: 80%;
+    max-width: 71rem;
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 20px;
