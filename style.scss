@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap");
+
 //cclases colores ------------------
 $color-blue: #08a6e4;
 $color-pink: #fb3b64;
@@ -53,6 +56,7 @@ body {
 
 .nav__opcions {
   display: none;
+  font-family: "Open Sans";
 }
 
 //----------
@@ -74,8 +78,8 @@ body {
 
 .h2 {
   text-align: center;
-  font-size: 2rem;
-  font-weight: 600;
+  font-size: 49px;
+  font-weight: 400;
 }
 
 .paragraph {
@@ -83,6 +87,7 @@ body {
   margin-top: 2rem;
   margin-bottom: 2rem;
   font-weight: 400;
+  font-size: 16px;
 }
 
 .button__shop {
@@ -137,7 +142,8 @@ body {
 }
 
 .section__most_popular h2 {
-  font-weight: 400;
+  font-weight: 500;
+  font-size: 36px;
 }
 
 //Img super Puesta para most popular
@@ -182,6 +188,8 @@ body {
   background-color: white;
   border: 1px solid rgba(204, 204, 204, 0.555);
   border-radius: 5px;
+  max-width: 19.625em;
+  height: 24rem;
   display: flex;
   flex-direction: column;
   margin-bottom: 2rem;
@@ -197,7 +205,11 @@ body {
 }
 .container__text_cart {
   padding: 1rem;
+  font-family: Open Sans;
+  font-size: 14px;
+  padding-top: 0;
 }
+
 .container__img {
   margin-top: 3rem;
   width: 100%;
@@ -205,10 +217,12 @@ body {
   position: relative;
   text-align: center;
 }
-
+.container_img_movile {
+  margin-top: 0.5rem;
+}
 .container__img_trumpet {
   background-color: #55dfb4;
-  width: 100%;
+  max-width: 27.5rem;
   box-sizing: content-box;
   margin-top: 0;
 }
@@ -232,9 +246,10 @@ body {
 }
 
 .div__always_first h2 {
-  font-weight: 400;
+  font-weight: 500;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  font-size: 30px;
 }
 
 //------------
@@ -245,15 +260,17 @@ body {
   width: 100%;
   padding: 2rem;
   text-align: center;
+  font-family: "Raleway";
 }
 
 .section__pricing h2 {
-  font-weight: 300;
-  font-size: 3rem;
+  font-weight: 400;
+  font-size: 36px;
 }
 
 .box__general_pricing {
   border: 1px solid $color-pink;
+  margin: 0 auto;
   margin-top: 3rem;
   border-radius: 20px;
   display: flex;
@@ -261,6 +278,8 @@ body {
   padding: 1rem;
   padding-bottom: 2rem;
   position: relative;
+  max-width: 25rem;
+  cursor: pointer;
 }
 
 .money {
@@ -333,16 +352,17 @@ body {
 }
 
 .h2__form_title {
-  font-size: 2.5rem;
-  font-weight: 300;
+  font-size: 49px;
+  font-weight: 400;
 }
 
 .p__form_title {
-  font-size: 1rem;
+  font-size: 16px;
 }
 .div__contact_dates {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+  color: #a5a5a5;
 }
 
 .img__span_contact {
@@ -356,7 +376,7 @@ body {
 
 .label__form {
   color: $color-blue;
-  font-size: 0.7rem;
+  font-size: 11px;
   font-weight: 700;
   margin-top: 0.5rem;
 }
@@ -370,6 +390,8 @@ body {
   padding-left: 1rem;
   outline: none;
   font-family: "Raleway";
+  padding-bottom: 0.5rem;
+  font-size: 16px;
 }
 
 .div__accept_consent {
@@ -386,7 +408,7 @@ body {
 
 .label__conditions {
   font-weight: 300;
-  color: rgb(180, 180, 180);
+  color: #a5a5a5;
 }
 
 .button__send {
@@ -432,15 +454,27 @@ body {
 }
 
 //----
+@media screen and (min-width: 305px) {
+  .section__datas {
+    padding-bottom: 5rem;
+  }
+}
+@media screen and (min-width: 375px) {
+  .div__always_first {
+    margin: 0 auto;
+    margin-top: 2.5rem;
+  }
+}
 
 @media screen and (min-width: 840px) {
   //Header-----------
 
   .nav__opcions {
     display: flex;
-    width: 40%;
+    width: 100%;
+    max-width: 30rem;
     height: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
   }
 
@@ -467,7 +501,8 @@ body {
   //Sell More --------------------
 
   .button__shop {
-    width: 40%;
+    width: 100%;
+    max-width: 27.5rem;
   }
 
   .img__bg_pc {
@@ -480,27 +515,39 @@ body {
 
   //---------------
   //the most popular----------
+
   .div__objets_popular {
+    margin: 0 auto;
     margin-top: 3rem;
     flex-direction: row;
-    width: 100%;
-    justify-content: space-around;
+    width: 50rem;
+    justify-content: space-between;
   }
   //------
 
   //always_first ---------
+  .section__datas {
+    padding-bottom: 0;
+  }
 
   .div__always_first {
     flex-direction: row-reverse;
     justify-content: space-evenly;
+    align-items: center;
     width: 80%;
+    max-width: 71rem;
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 20px;
   }
 
   .container__text_cart {
-    width: 26rem;
+    width: 40%;
+    font-size: 16px;
+  }
+
+  .container__text_cart h2 {
+    font-size: 36px;
   }
 
   .div__always_first_movile {
@@ -508,19 +555,22 @@ body {
   }
 
   .container__img {
-    width: 40%;
+    max-width: 40%;
   }
-
+  .img_below {
+    width: 100%;
+  }
   .img_up {
-    width: 300px;
+    width: 100%;
   }
 
   .img__img1 {
     left: 60%;
+    width: 50%;
   }
 
   .img__img2 {
-    width: 25vh;
+    width: 70%;
   }
 
   .div__line_style_pink {
@@ -554,8 +604,19 @@ body {
   }
 
   .container__text_cart_trumpet {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    width: 55%;
+    max-width: 38rem;
+    height: 23rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .container__img_trumpet {
+    height: 23rem;
+  }
+  .img__trumpet {
+    top: 5rem;
   }
   //------
 
@@ -568,6 +629,7 @@ body {
   }
   .box__general_pricing {
     width: 30%;
+    max-width: 23rem;
     height: 31.5rem;
     flex-direction: column;
     justify-content: center;
@@ -615,7 +677,8 @@ body {
     flex-direction: row;
     justify-content: space-between;
     margin: 0 auto;
-    width: 60%;
+    width: 100%;
+    max-width: 55rem;
     margin-top: 5rem;
     margin-bottom: 5rem;
   }
@@ -633,33 +696,37 @@ body {
   }
   //--------
 }
-
+@media screen and (min-width: 1219px) {
+  .img__trumpet {
+    max-width: 22rem;
+  }
+}
 @media screen and (min-width: 1450px) {
   .section__form {
     justify-content: space-evenly;
     margin: 0 auto;
     margin-top: 5rem;
-    width: 40%;
+
     margin-bottom: 5rem;
   }
 
   .div__general_box_precing {
     width: 100%;
+    max-width: 79rem;
     margin: 0 auto;
-  }
-
-  .box__general_pricing {
-    width: 25rem;
   }
 
   .form {
     width: 45vh;
   }
+
+  .container__text_cart_trumpet {
+    width: 55%;
+  }
 }
 
 @media screen and (min-width: 1946px) {
   .div__general_box_precing {
-    width: 70%;
     margin: 0 auto;
   }
 }
