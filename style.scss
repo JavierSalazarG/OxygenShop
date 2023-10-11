@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Raleway&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Raleway:wght@200;300;400;500;600;700;800&display=swap");
 
 //cclases colores ------------------
 $color-blue: #08a6e4;
@@ -42,7 +41,7 @@ body {
 
 .header {
   width: 100%;
-  height: 5rem;
+  height: 4.37rem;
   box-shadow: 0 5px 7px rgba(0, 0, 0, 0.25);
   display: flex;
   justify-content: space-around;
@@ -50,13 +49,14 @@ body {
 }
 
 .title {
-  font-size: 2rem;
+  font-family: Raleway;
+  font-weight: 300;
+  font-size: 32px;
   cursor: pointer;
 }
 
 .nav__opcions {
   display: none;
-  font-family: "Open Sans";
 }
 
 //----------
@@ -65,6 +65,7 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
+  margin-bottom: 2.75rem;
 }
 
 .section__button__shop {
@@ -80,9 +81,11 @@ body {
   text-align: center;
   font-size: 49px;
   font-weight: 400;
+  font-family: Raleway;
 }
 
 .paragraph {
+  font-family: Open Sans;
   text-align: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -94,12 +97,14 @@ body {
   width: 70%;
   height: 4rem;
   margin: 0 auto;
-  border-radius: 20px;
+  border-radius: 2.18rem;
   color: white;
   border: none;
   box-shadow: 0 5px 7px #1ab6f37a;
-  font-size: 1rem;
+  font-size: 16px;
   cursor: pointer;
+  font-weight: 700;
+  font-family: Open Sans;
 }
 
 .button__shop:hover {
@@ -142,7 +147,8 @@ body {
 }
 
 .section__most_popular h2 {
-  font-weight: 500;
+  font-weight: 400;
+  font-family: Releway;
   font-size: 36px;
 }
 
@@ -163,15 +169,19 @@ body {
 }
 
 .p__number_popular {
+  font-size: 20px;
+  font-family: Raleway;
   font-weight: 800;
-  font-size: 1.5rem;
 }
 
 .text__popular {
-  font-weight: 500;
+  font-weight: 400;
   color: #a6a8a8;
-  margin-top: 1rem;
   text-align: center;
+  margin: 0 auto;
+  margin-top: 1rem;
+  font-family: Raleway;
+  width: 60%;
 }
 
 //------------
@@ -179,7 +189,7 @@ body {
 //secciones y datos -------
 .section__datas {
   width: 100%;
-  padding: 2rem;
+  padding: 3rem;
   background-color: #f7f7f7;
 }
 
@@ -205,9 +215,20 @@ body {
 }
 .container__text_cart {
   padding: 1rem;
-  font-family: Open Sans;
-  font-size: 14px;
   padding-top: 0;
+}
+
+.container__text_cart h2 {
+  font-family: Raleway;
+  font-size: 1.875rem;
+  font-weight: 400;
+  max-width: 26rem;
+}
+
+.container__text_cart p {
+  font-family: Open Sans;
+  font-size: 0.875rem;
+  font-weight: 400;
 }
 
 .container__img {
@@ -245,13 +266,6 @@ body {
   width: 70%;
 }
 
-.div__always_first h2 {
-  font-weight: 500;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  font-size: 30px;
-}
-
 //------------
 
 //Precios-------
@@ -264,6 +278,7 @@ body {
 }
 
 .section__pricing h2 {
+  font-family: Raleway;
   font-weight: 400;
   font-size: 36px;
 }
@@ -278,40 +293,63 @@ body {
   padding: 1rem;
   padding-bottom: 2rem;
   position: relative;
+  width: 100%;
   max-width: 25rem;
   cursor: pointer;
 }
 
-.money {
+.div__money {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 100%;
 }
 
+.div__money h3 {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 21px;
+}
+
+.p__cant {
+  font-size: 46px;
+  font-weight: 300;
+  font-family: Open Sans;
+  margin-bottom: 5px;
+  margin-top: 14px;
+}
+
+.span__limit {
+  font-weight: 700;
+  font-family: Raleway;
+  font-size: 12px;
+}
 .opcion__pricing {
   width: 100%;
   text-align: left;
 }
 
-.opcion__pricing p {
+.opcion__pricing li {
   margin-top: 1rem;
+  text-decoration: none;
+  list-style: none;
 }
 
-.opcion__pricing p span {
+.opcion__pricing li span {
   margin-right: 0.5rem;
 }
 
-.money p {
-  font-size: 3rem;
+.div__button_precing {
+  position: absolute;
+  top: 90%;
+  left: 0;
+  width: 100%;
+  text-align: center;
 }
 
 .button__precing {
-  position: absolute;
-  top: 13rem;
-  left: 30%;
-  width: 40%;
+  width: 10.3rem;
   height: 3rem;
   cursor: pointer;
   border: none;
@@ -346,23 +384,34 @@ body {
 
 .section__form {
   width: 100%;
+  max-width: 19.5rem;
+  margin: 0 auto;
   margin-top: 3rem;
   margin-bottom: 2rem;
   padding: 1rem;
 }
 
 .h2__form_title {
-  font-size: 49px;
+  font-family: Raleway;
+  font-size: 2.5rem;
+
   font-weight: 400;
 }
 
 .p__form_title {
-  font-size: 16px;
+  font-family: Open Sans;
+  font-size: 1rem;
+  font-weight: 400;
 }
 .div__contact_dates {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+  margin-top: 2.37rem;
+  margin-bottom: 3.5rem;
   color: #a5a5a5;
+}
+
+.p__contact_dates {
+  font-family: Open Sans;
+  font-size: 1rem;
 }
 
 .img__span_contact {
@@ -376,8 +425,9 @@ body {
 
 .label__form {
   color: $color-blue;
-  font-size: 11px;
-  font-weight: 700;
+  font-family: Open Sans;
+  font-size: 0.6875rem;
+  font-weight: 600;
   margin-top: 0.5rem;
 }
 
@@ -389,7 +439,7 @@ body {
   margin-bottom: 1rem;
   padding-left: 1rem;
   outline: none;
-  font-family: "Raleway";
+  font-family: Open Sans;
   padding-bottom: 0.5rem;
   font-size: 16px;
 }
@@ -401,20 +451,27 @@ body {
   margin-top: 2rem;
 }
 .input__checkbox {
-  width: 100%;
+  width: 1.5rem;
+  border-radius: 0.25rem;
   align-self: flex-start;
   justify-content: flex-end;
+  flex-shrink: 0;
+  background-color: #fff;
+  color: #08a6e4;
 }
 
 .label__conditions {
-  font-weight: 300;
-  color: #a5a5a5;
+  font-weight: 400;
+  font-family: Open Sans;
+  font-size: 0.75rem;
+  color: #707070;
 }
 
 .button__send {
-  width: 60%;
+  width: 100%;
+  max-width: 14.125rem;
   height: 2.5rem;
-  border-radius: 20px;
+  border-radius: 2.18rem;
   border: none;
   background-color: $color-blue;
   color: white;
@@ -440,29 +497,70 @@ body {
   box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.25);
   padding: 2rem;
   justify-content: space-between;
+  height: 5.56rem;
 }
 
 .h2__title_footer {
   color: $color-blue;
+  font-family: Raleway;
+  font-size: 1.625rem;
   font-weight: 300;
   cursor: pointer;
 }
 
 .p__copyright {
   color: #c0c0c0;
-  font-size: 0.7rem;
+  font-family: Open Sans;
+  font-size: 0.6875rem;
+}
+
+.div__img_logo {
+  width: 4.25rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 //----
 @media screen and (min-width: 305px) {
   .section__datas {
-    padding-bottom: 5rem;
+    padding-bottom: 6rem;
   }
 }
 @media screen and (min-width: 375px) {
   .div__always_first {
     margin: 0 auto;
     margin-top: 2.5rem;
+  }
+
+  .div__always_first h2 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .div__button_precing {
+    top: 90%;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .section__form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 42.3rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  .form {
+    width: 50%;
+  }
+
+  .p__form_title {
+    margin-top: 1.38rem;
   }
 }
 
@@ -472,7 +570,7 @@ body {
   .nav__opcions {
     display: flex;
     width: 100%;
-    max-width: 30rem;
+    max-width: 27rem;
     height: 100%;
     justify-content: space-between;
     align-items: center;
@@ -486,6 +584,8 @@ body {
     display: flex;
     align-items: center;
     color: #929292;
+    font-family: "Open Sans";
+    font-size: 11px;
   }
 
   .nav__opcion:hover {
@@ -546,10 +646,6 @@ body {
     font-size: 16px;
   }
 
-  .container__text_cart h2 {
-    font-size: 36px;
-  }
-
   .div__always_first_movile {
     flex-direction: row;
   }
@@ -574,7 +670,8 @@ body {
   }
 
   .div__line_style_pink {
-    width: 80%;
+    width: 100%;
+    max-width: 20.43rem;
     height: 2px;
     background-color: $color-pink;
     margin: 2rem;
@@ -582,7 +679,8 @@ body {
   }
 
   .div__line_style_blue {
-    width: 80%;
+    width: 100%;
+    max-width: 20.43rem;
     height: 2px;
     background-color: $color-blue;
     margin: 2rem;
@@ -590,7 +688,8 @@ body {
   }
 
   .div__line_style_green {
-    width: 80%;
+    width: 100%;
+    max-width: 20.43rem;
     height: 2px;
     background-color: $color-green;
     margin: 2rem;
@@ -640,15 +739,19 @@ body {
     height: 22rem;
     text-align: center;
     align-content: space-between;
+    margin-top: 3rem;
   }
 
-  .opcion__pricing p {
-    margin-top: 2rem;
+  .opcion__pricing li {
+    margin-bottom: 1.5rem;
   }
 
-  .button__precing {
+  .div__button_precing {
+    position: absolute;
     top: 30rem;
+    width: 100%;
   }
+
   //-------------
 }
 
@@ -671,22 +774,10 @@ body {
   //--------
 
   //form-----
-
   .section__form {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0 auto;
     width: 100%;
-    max-width: 55rem;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    max-width: 46.3rem;
   }
-
-  .form {
-    width: 50%;
-  }
-
   //------
 
   //footer-----
@@ -700,9 +791,9 @@ body {
   .img__trumpet {
     max-width: 22rem;
   }
-}
-@media screen and (min-width: 1450px) {
   .section__form {
+    width: 100%;
+    max-width: 56rem;
     justify-content: space-evenly;
     margin: 0 auto;
     margin-top: 5rem;
@@ -710,14 +801,27 @@ body {
     margin-bottom: 5rem;
   }
 
+  .div__contact_dates {
+    display: flex;
+    flex-direction: row;
+    width: 21rem;
+    justify-content: space-between;
+  }
+
+  .p__contact_dates {
+    display: flex;
+    align-items: center;
+  }
+  .form {
+    margin-left: 7.5rem;
+    width: 27.5rem;
+  }
+}
+@media screen and (min-width: 1450px) {
   .div__general_box_precing {
     width: 100%;
     max-width: 79rem;
     margin: 0 auto;
-  }
-
-  .form {
-    width: 45vh;
   }
 
   .container__text_cart_trumpet {
