@@ -6,13 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
     <title>OxygenShop</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-    </style>
-    <title>Document</title>
+
+
 </head>
 
-<body>
+<body id="body">
     <header class="header">
         <h1 class="title color_blue_color">OXYGENShop</h1>
 
@@ -27,6 +25,7 @@
         </div>
 
     </header>
+
     <main class="main">
         <section class="section__button__shop">
             <h2 class="h2">Sell More!</h2>
@@ -222,8 +221,8 @@
             </div>
 
 
-            <form class="form">
-                <label class="label__form" id="name">NAME</label><br>
+            <form class="form" id="form_contact" method="post" ">
+                <label class=" label__form" id="name">NAME</label><br>
                 <input class="input__form" name="name" type="text"><br>
                 <label class="label__form" id="mail">EMAIL</label><br>
                 <input class="input__form" name="mail" type="mail"><br>
@@ -244,6 +243,10 @@
                 <input class="button__send" value="Send" type="submit" />
             </form>
         </section>
+        <span class="span__button_go">
+            <button class="button__go_home" id="button__go_home">↑</button>
+        </span>
+
     </main>
     <footer class="footer">
         <div>
@@ -259,6 +262,8 @@
             </span>
         </div>
     </footer>
+
+    <script type="text/javascript" src="./scripts/go_home.js"></script>
 </body>
 
 </html>
