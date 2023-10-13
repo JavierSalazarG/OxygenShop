@@ -114,12 +114,18 @@
         </section>
         <section class="section__pricing">
             <h2>Pricing</h2>
+
+            <span class="span__buttons_money">
+                <button id="eur">EUR</button>
+                <button id="usd">USD</button>
+                <button id="gbp">GBP</button>
+            </span>
             <div class="div__general_box_precing">
 
                 <div class="box__general_pricing border__pink color_pink">
                     <div class="div__money">
                         <h3>Basic</h3>
-                        <p class="color_pink_color p__cant">$0</p>
+                        <p id="precingBasic" class="color_pink_color p__cant">€ 0</p>
 
                     </div>
                     <ul class="opcion__pricing">
@@ -149,7 +155,7 @@
                 <div class="box__general_pricing color_pink border__blue">
                     <div class="div__money">
                         <h3>Professional</h3>
-                        <p class="color_blue_color p__cant">$25</p>
+                        <p id="precingProfessional" class="color_blue_color p__cant">€ 25</p>
                         <span class="span__limit">Limited offer</span>
                     </div>
                     <ul class="opcion__pricing">
@@ -177,7 +183,7 @@
                 <div class="box__general_pricing color_pink border__green">
                     <div class="div__money">
                         <h3>Premium</h3>
-                        <p class="color_green_color p__cant">$60</p>
+                        <p id="precingPremium" class="color_green_color p__cant">€ 60</p>
                         <span class="span__limit">Limited offer</span>
 
                     </div>
@@ -265,6 +271,7 @@
 
     <script type="text/javascript" src="./scripts/go_home.js"></script>
     <script type="text/javascript" src="./scripts/open_menu.js"></script>
+    <script type="text/javascript" src="./scripts/coins.js"></script>
 </body>
 
 </html>

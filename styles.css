@@ -290,6 +290,24 @@ body {
   font-family: Raleway;
   font-weight: 400;
   font-size: 36px;
+  margin-bottom: 3rem;
+}
+
+.span__buttons_money {
+  width: 100%;
+  max-width: 35rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.span__buttons_money button {
+  padding: 1rem;
+  border-radius: 10px;
+  border: none;
+  background-color: rgba(233, 231, 231, 0.555);
+  box-shadow: 0 5px 7px #55dfb4;
 }
 
 .box__general_pricing {
@@ -318,11 +336,11 @@ body {
 .div__money h3 {
   font-family: Raleway;
   font-weight: 700;
-  font-size: 21px;
+  font-size: 16px;
 }
 
 .p__cant {
-  font-size: 46px;
+  font-size: 25px;
   font-weight: 300;
   font-family: Open Sans;
   margin-bottom: 5px;
@@ -572,6 +590,12 @@ body {
   .div__button_precing {
     top: 90%;
   }
+  .div__money h3 {
+    font-size: 21px;
+  }
+  .p__cant {
+    font-size: 36px;
+  }
 }
 @media screen and (min-width: 760px) {
   .section__form {
@@ -583,6 +607,9 @@ body {
     max-width: 42.3rem;
     margin-top: 5rem;
     margin-bottom: 5rem;
+  }
+  .p__cant {
+    font-size: 46px;
   }
   .form {
     width: 50%;
