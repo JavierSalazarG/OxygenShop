@@ -51,8 +51,8 @@ const selectionCoins = () => {
     precingProfessional.innerHTML = "€ 25";
     precingPremium.innerHTML = "€ 60";
     console.log(priceEUR);
-    buttonGbp.style.boxShadow = "0 5px 7px #55dfb4";
-    buttonUsd.style.boxShadow = "0 5px 7px #55dfb4";
+    buttonGbp.style.boxShadow = "0 2px 5px #55dfb4";
+    buttonUsd.style.boxShadow = "0 2px 5px #55dfb4";
     buttonEur.style.boxShadow = "0 5px 7px #fb3b64";
   });
 
@@ -65,9 +65,9 @@ const selectionCoins = () => {
     precingBasic.innerHTML = "$ 0";
     precingProfessional.innerHTML = `$ ${mostrarprecioProfesional}`;
     precingPremium.innerHTML = `$ ${mostrarprecioPremium}`;
-    buttonGbp.style.boxShadow = "0 5px 7px #55dfb4";
+    buttonGbp.style.boxShadow = "0 2px 5px #55dfb4";
     buttonUsd.style.boxShadow = "0 5px 7px #fb3b64";
-    buttonEur.style.boxShadow = "0 5px 7px #55dfb4";
+    buttonEur.style.boxShadow = "0 2px 5px #55dfb4";
   });
 
   //boton libra
@@ -79,8 +79,8 @@ const selectionCoins = () => {
     precingProfessional.innerHTML = `£ ${mostrarprecioProfesional}`;
     precingPremium.innerHTML = `£ ${mostrarprecioPremium}`;
     buttonGbp.style.boxShadow = "0 5px 7px #fb3b64";
-    buttonUsd.style.boxShadow = "0 5px 7px #55dfb4";
-    buttonEur.style.boxShadow = "0 5px 7px #55dfb4";
+    buttonUsd.style.boxShadow = "0 2px 5px #55dfb4";
+    buttonEur.style.boxShadow = "0 2px 5px #55dfb4";
   });
 };
 
