@@ -39,6 +39,20 @@ body {
 
 //header----
 
+.div__complet_sscroller {
+  width: 100%;
+  height: 2px;
+  position: fixed;
+  z-index: 99;
+}
+
+#scrollerPrigress {
+  width: 0;
+  height: 2px;
+  background-color: $color-pink;
+  z-index: 999;
+}
+
 .header {
   width: 100%;
   height: 4.37rem;
@@ -268,6 +282,7 @@ body {
   max-width: 27.5rem;
   box-sizing: content-box;
   margin-top: 0;
+  z-index: 1;
 }
 .img_below {
   position: absolute;
@@ -321,6 +336,11 @@ body {
   border: none;
   background-color: rgba(233, 231, 231, 0.555);
   box-shadow: 0 2px 5px $color-green;
+  cursor: pointer;
+}
+
+.span__buttons_money button:hover {
+  box-shadow: 0 2px 5px $color-pink;
 }
 
 .box__general_pricing {
