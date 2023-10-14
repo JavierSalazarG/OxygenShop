@@ -46,11 +46,10 @@ const selectionCoins = () => {
 
   //boton euro
   buttonEur.addEventListener("click", () => {
-    const priceEUR = prices[0];
     precingBasic.innerHTML = "€ 0";
     precingProfessional.innerHTML = "€ 25";
     precingPremium.innerHTML = "€ 60";
-    console.log(priceEUR);
+
     buttonGbp.style.boxShadow = "0 2px 5px #55dfb4";
     buttonUsd.style.boxShadow = "0 2px 5px #55dfb4";
     buttonEur.style.boxShadow = "0 5px 7px #fb3b64";
