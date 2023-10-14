@@ -42,10 +42,35 @@ body {
 }
 
 #scrollerPrigress {
-  width: 0;
   height: 2px;
   background-color: #fb3b64;
   z-index: 999;
+}
+
+.div__suscription {
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+  display: none;
+  justify-content: center;
+}
+
+.span__suscription {
+  background-color: #55dfb4;
+  border: 1px solid #55dfb4;
+  color: white;
+  border-radius: 20px;
+  position: fixed;
+  z-index: 9999;
+  top: 3rem;
+  border: 100% solid gray;
+}
+
+.span__suscription p {
+  text-align: center;
+  padding: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .header {
