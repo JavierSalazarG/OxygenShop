@@ -26,7 +26,7 @@ Describe los pasos necesarios para instalar y configurar tu proyecto. Puedes pro
 
 ```bash
 # Clonar el repositorio
-git clone https://github.com/tuusuario/tuproyecto.git
+git clone git@github.com:JavierSalazarG/OxygenShop.github.io.git
 
 # Instalar dependencias
 npm install
