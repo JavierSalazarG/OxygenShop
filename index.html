@@ -6,27 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
     <title>OxygenShop</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-    </style>
-    <title>Document</title>
+
 </head>
 
-<body>
+<body id="body">
+    <div class="div__complet_sscroller">
+        <div id="scrollerPrigress"></div>
+    </div>
+    <div class="div__suscription" id="div__suscription">
+        <span id="span__suscription" class="span__suscription">
+            <p>Gracias Por suscribirte</p>
+        </span>
+    </div>
+    <div id="div__modal" class="div__modal">
+        <span class="span__modal">
+            <h2 class="h2__text_suscribe">Subscribe to our newsletter</h2>
+            <button id="button__esc" class="button__esc">X</button>
+            <form method="post" id="form__newsletter" class="form__newsletter">
+                <Input id="input__newsletter" class="input__newsletter" type="email" placeholder="Email"></Input>
+                <input class="input__subnit_newsletter" type="submit">
+            </form>
+        </span>
+    </div>
     <header class="header">
         <h1 class="title color_blue_color">OXYGENShop</h1>
 
-        <a href="#" class="nav__menu">
+        <a href="#" id="nav__menu" class="nav__menu">
             <img class="img__menu" src="./img/Menu.svg" alt="menu" />
         </a>
-        <div class="nav__opcions">
+        <nav id="nav__opcions" class="nav__opcions">
             <a class="nav__opcion">WHY US</a>
             <a class="nav__opcion">BENEFITS</a>
             <a class="nav__opcion">PRICES</a>
             <a class="nav__opcion">CONTACT</a>
-        </div>
+        </nav>
 
     </header>
+
     <main class="main">
         <section class="section__button__shop">
             <h2 class="h2">Sell More!</h2>
@@ -115,12 +131,18 @@
         </section>
         <section class="section__pricing">
             <h2>Pricing</h2>
+
+            <span class="span__buttons_money">
+                <button id="eur">EUR</button>
+                <button id="usd">USD</button>
+                <button id="gbp">GBP</button>
+            </span>
             <div class="div__general_box_precing">
 
                 <div class="box__general_pricing border__pink color_pink">
                     <div class="div__money">
                         <h3>Basic</h3>
-                        <p class="color_pink_color p__cant">$0</p>
+                        <p id="precingBasic" class="color_pink_color p__cant">€ 0</p>
 
                     </div>
                     <ul class="opcion__pricing">
@@ -150,7 +172,7 @@
                 <div class="box__general_pricing color_pink border__blue">
                     <div class="div__money">
                         <h3>Professional</h3>
-                        <p class="color_blue_color p__cant">$25</p>
+                        <p id="precingProfessional" class="color_blue_color p__cant">€ 25</p>
                         <span class="span__limit">Limited offer</span>
                     </div>
                     <ul class="opcion__pricing">
@@ -178,7 +200,7 @@
                 <div class="box__general_pricing color_pink border__green">
                     <div class="div__money">
                         <h3>Premium</h3>
-                        <p class="color_green_color p__cant">$60</p>
+                        <p id="precingPremium" class="color_green_color p__cant">€ 60</p>
                         <span class="span__limit">Limited offer</span>
 
                     </div>
@@ -206,6 +228,18 @@
                 </div>
             </div>
         </section>
+        <section class="seccion__slider">
+            <div id="slider" class="slider">
+                <img class="imgSlider" src="./img/imgSlider/picography-snow-mountain-sunlight-clouds.jpg" alt="img2">
+                <img class="imgSlider" src="./img/imgSlider/picography-suburban-neighborhood-in-the-evening.jpg"
+                    alt="img3">
+                <img class="imgSlider" src="./img/imgSlider/picography-waterfall-tropical-jungle.jpg" alt="img4">
+                <img class="imgSlider" src="./img/imgSlider/picography-winter-covered-bridge.jpg" alt="img5">
+                <img class="imgSlider" src="./img/imgSlider/picography-river-canyon-sky.jpg" alt="img1">
+                <div id="div__buttons_slider">
+                </div>
+            </div>
+        </section>
         <section class="section__form">
             <div class="div__dates_contact">
                 <h2 class="h2__form_title">Any questions?</h2>
@@ -222,13 +256,13 @@
             </div>
 
 
-            <form class="form">
-                <label class="label__form" id="name">NAME</label><br>
-                <input class="input__form" name="name" type="text"><br>
+            <form class="form" id="form_contact" method="post" ">
+                <label class=" label__form" id="name">NAME</label><br>
+                <input class="input__form" id="nameInput" name="name" type="text"><br>
                 <label class="label__form" id="mail">EMAIL</label><br>
-                <input class="input__form" name="mail" type="mail"><br>
+                <input class="input__form" id="mailInput" name="mail" type="mail"><br>
                 <div class="div__accept_consent">
-                    <input class="input__checkbox" type="checkbox" id="conditions" name="conditions" value="ok">
+                    <input class="input__checkbox" type="checkbox" id="conditionsInput" name="conditions">
                     <label class="label__conditions" id="conditions">I hereby give consent for my personal data included
                         in my application to be
                         processed for the purposes of the
@@ -244,6 +278,10 @@
                 <input class="button__send" value="Send" type="submit" />
             </form>
         </section>
+        <span class="span__button_go">
+            <button class="button__go_home" id="button__go_home">↑</button>
+        </span>
+
     </main>
     <footer class="footer">
         <div>
@@ -259,6 +297,14 @@
             </span>
         </div>
     </footer>
+
+    <script type="text/javascript" src="./scripts/go_home.js"></script>
+    <script type="text/javascript" src="./scripts/open_menu.js"></script>
+    <script type="text/javascript" src="./scripts/coins.js"></script>
+    <script type="text/javascript" src="./scripts/scroll.js"></script>
+    <script type="text/javascript" src="./scripts/validation.js"></script>
+    <script type="text/javascript" src="./scripts/modal.js"></script>
+    <script type="text/javascript" src="./scripts/slider.js"></script>
 </body>
 
 </html>
