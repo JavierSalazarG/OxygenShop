@@ -22,11 +22,6 @@ Es un proyecto en HTML, sass y Js.
 
 ## Instalación
 
-Describe los pasos necesarios para instalar y configurar tu proyecto. Puedes proporcionar ejemplos de comandos o requisitos de software.
-
 ```bash
 # Clonar el repositorio
 git clone git@github.com:JavierSalazarG/OxygenShop.github.io.git
-
-# Instalar dependencias
-npm install
