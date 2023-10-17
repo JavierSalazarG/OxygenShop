@@ -185,6 +185,7 @@ body {
 .nav__opcion {
   margin-bottom: 0.8rem;
   font-family: Open Sans;
+  text-decoration: none;
   font-size: 0.7875rem;
   color: #a5a5a5;
   font-weight: 700;
