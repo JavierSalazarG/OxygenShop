@@ -7,20 +7,19 @@ const precingPremium = document.getElementById("precingPremium");
 const buttonEur = document.getElementById("eur");
 const buttonUsd = document.getElementById("usd");
 const buttonGbp = document.getElementById("gbp");
-let prices = [];
 
 //funcion crear boton
-const buttons = (nameButtons, precingAPI, symbol) => {
+const buttons = (nameButtons, pricesAPI, symbol) => {
   const colorRed = "0 5px 7px #fb3b64";
-  console.log(precingAPI);
+
   nameButtons.addEventListener("click", () => {
     if (!nameButtons) {
       nameButtons.style.boxShadow = colorRed;
     }
     if (nameButtons != buttonEur) {
-      let cantPrecingProfessional = (precingAPI * 25).toFixed(2);
+      let cantPrecingProfessional = (pricesAPI * 25).toFixed(2);
       console.log(cantPrecingProfessional);
-      let cantPrecingPremium = (precingAPI * 60).toFixed(2);
+      let cantPrecingPremium = (pricesAPI * 60).toFixed(2);
       precingBasic.innerHTML = `${symbol} 0`;
       precingProfessional.innerHTML = `${symbol}  ${cantPrecingProfessional}`;
       precingPremium.innerHTML = `${symbol}  ${cantPrecingPremium}`;
@@ -35,13 +34,13 @@ const buttons = (nameButtons, precingAPI, symbol) => {
 };
 
 //Asignar los botones y cambio precio
-const selectionCoins = () => {
+const selectionCoins = (prices) => {
   //boton euro
   buttons(buttonEur);
   //boton dolar
-  buttons(buttonUsd, prices[1], "$");
+  buttons(buttonUsd, prices[0], "$");
   //boton libra
-  buttons(buttonGbp, prices[2], "£");
+  buttons(buttonGbp, prices[1], "£");
 };
 
 //Llamada a API
@@ -61,8 +60,9 @@ const getCurrency = async (url) => {
 
     if (response.status === 200) {
       const data = await response.json();
-
-      prices.push(data.eur.eur, data.eur.usd, data.eur.gbp);
+      //guardo la info en prices y lo paso a selectionCoins
+      const prices = [data.eur.usd, data.eur.gbp];
+      selectionCoins(prices);
     } else {
       console.error(
         "Error al obtener los datos. Código de estado: " + response.status
@@ -76,4 +76,3 @@ const getCurrency = async (url) => {
 };
 
 getCurrency(url_api);
-selectionCoins();
