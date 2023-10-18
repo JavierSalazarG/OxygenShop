@@ -2,9 +2,9 @@ const background = document.getElementById("div__modal");
 const button__esc = document.getElementById("button__esc");
 const span__suscription = document.getElementById("span__suscription");
 const form__newsletter = document.getElementById("form__newsletter");
-let flag = false;
+const input__newsletter = document.getElementById("input__newsletter");
 
-//Hacer que aparezca a los 5s o al 25%
+let flag = false;
 
 /*
 Primero comprueba si lo puede mostrar con flag y luego cambia el displey a flex a los 5s
@@ -55,10 +55,9 @@ background.addEventListener("click", (event) => {
 
 //validacion y envio de mail
 const mailValidate = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,8}$/;
-const input__newsletter = document.getElementById("input__newsletter");
-
 form__newsletter.addEventListener("submit", (event) => {
   event.preventDefault();
+
   if (mailValidate.test(input__newsletter.value)) {
     input__newsletter.style.borderBottom = "1px solid #55dfb4";
     setTimeout(() => {
