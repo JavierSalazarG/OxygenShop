@@ -1,7 +1,48 @@
 const url_api =
   "https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/eur.json";
 
+const precingBasic = document.getElementById("precingBasic");
+const precingProfessional = document.getElementById("precingProfessional");
+const precingPremium = document.getElementById("precingPremium");
+const buttonEur = document.getElementById("eur");
+const buttonUsd = document.getElementById("usd");
+const buttonGbp = document.getElementById("gbp");
 let prices = [];
+
+//funcion crear boton
+const buttons = (nameButtons, precingAPI, symbol) => {
+  const colorRed = "0 5px 7px #fb3b64";
+  console.log(precingAPI);
+  nameButtons.addEventListener("click", () => {
+    if (!nameButtons) {
+      nameButtons.style.boxShadow = colorRed;
+    }
+    if (nameButtons != buttonEur) {
+      let cantPrecingProfessional = (precingAPI * 25).toFixed(2);
+      console.log(cantPrecingProfessional);
+      let cantPrecingPremium = (precingAPI * 60).toFixed(2);
+      precingBasic.innerHTML = `${symbol} 0`;
+      precingProfessional.innerHTML = `${symbol}  ${cantPrecingProfessional}`;
+      precingPremium.innerHTML = `${symbol}  ${cantPrecingPremium}`;
+      nameButtons.style.boxShadow = "";
+    } else {
+      precingBasic.innerHTML = "€ 0";
+      precingProfessional.innerHTML = "€ 25";
+      precingPremium.innerHTML = "€ 60";
+      buttonEur.style.boxShadow = colorRed;
+    }
+  });
+};
+
+//Asignar los botones y cambio precio
+const selectionCoins = () => {
+  //boton euro
+  buttons(buttonEur);
+  //boton dolar
+  buttons(buttonUsd, prices[1], "$");
+  //boton libra
+  buttons(buttonGbp, prices[2], "£");
+};
 
 //Llamada a API
 const getCurrency = async (url) => {
@@ -32,55 +73,6 @@ const getCurrency = async (url) => {
       "Se ha producido un error al realizar la petición a la API: " + error
     );
   }
-};
-
-//Asignar los botones y cambio precio
-const selectionCoins = () => {
-  const buttonEur = document.getElementById("eur");
-  const buttonUsd = document.getElementById("usd");
-  const buttonGbp = document.getElementById("gbp");
-
-  const precingBasic = document.getElementById("precingBasic");
-  const precingProfessional = document.getElementById("precingProfessional");
-  const precingPremium = document.getElementById("precingPremium");
-
-  //boton euro
-  buttonEur.addEventListener("click", () => {
-    precingBasic.innerHTML = "€ 0";
-    precingProfessional.innerHTML = "€ 25";
-    precingPremium.innerHTML = "€ 60";
-
-    buttonGbp.style.boxShadow = "0 2px 5px #55dfb4";
-    buttonUsd.style.boxShadow = "0 2px 5px #55dfb4";
-    buttonEur.style.boxShadow = "0 5px 7px #fb3b64";
-  });
-
-  //boton dolar
-  buttonUsd.addEventListener("click", () => {
-    const priceUSD = prices[1];
-
-    let mostrarprecioPremium = (priceUSD * 60).toFixed(2);
-    let mostrarprecioProfesional = (priceUSD * 25).toFixed(2);
-    precingBasic.innerHTML = "$ 0";
-    precingProfessional.innerHTML = `$ ${mostrarprecioProfesional}`;
-    precingPremium.innerHTML = `$ ${mostrarprecioPremium}`;
-    buttonGbp.style.boxShadow = "0 2px 5px #55dfb4";
-    buttonUsd.style.boxShadow = "0 5px 7px #fb3b64";
-    buttonEur.style.boxShadow = "0 2px 5px #55dfb4";
-  });
-
-  //boton libra
-  buttonGbp.addEventListener("click", () => {
-    const priceGBP = prices[2];
-    let mostrarprecioPremium = (priceGBP * 60).toFixed(2);
-    let mostrarprecioProfesional = (priceGBP * 25).toFixed(2);
-    precingBasic.innerHTML = "£ 0";
-    precingProfessional.innerHTML = `£ ${mostrarprecioProfesional}`;
-    precingPremium.innerHTML = `£ ${mostrarprecioPremium}`;
-    buttonGbp.style.boxShadow = "0 5px 7px #fb3b64";
-    buttonUsd.style.boxShadow = "0 2px 5px #55dfb4";
-    buttonEur.style.boxShadow = "0 2px 5px #55dfb4";
-  });
 };
 
 getCurrency(url_api);
