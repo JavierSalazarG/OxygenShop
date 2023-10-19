@@ -15,7 +15,7 @@ if (!checkShown()) {
     background.style.display = "flex";
   }, 5000);
 
-  function checkScrollPosition() {
+  const checkScrollPosition = () => {
     const bodyHeight = document.body.offsetHeight;
     const scrollY = window.scrollY;
     const scrollPercentage = (scrollY / bodyHeight) * 100;
@@ -24,7 +24,7 @@ if (!checkShown()) {
       clearTimeout(timeoutInit);
       background.style.display = "flex";
     }
-  }
+  };
   window.addEventListener("scroll", checkScrollPosition);
   //-----------------------------
 }
