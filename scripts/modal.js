@@ -12,18 +12,20 @@ function checkShown() {
 }
 if (!checkShown()) {
   const timeoutInit = setTimeout(() => {
-    background.style.display = "flex";
+    if (!checkShown()) {
+      background.style.display = "flex";
+    }
   }, 5000);
 
   const checkScrollPosition = () => {
     const bodyHeight = document.body.offsetHeight;
     const scrollY = window.scrollY;
     const scrollPercentage = (scrollY / bodyHeight) * 100;
-
-    if (scrollPercentage >= 25) {
-      clearTimeout(timeoutInit);
-      background.style.display = "flex";
-    }
+    if (!checkShown())
+      if (scrollPercentage >= 25) {
+        clearTimeout(timeoutInit);
+        background.style.display = "flex";
+      }
   };
   window.addEventListener("scroll", checkScrollPosition);
   //-----------------------------
