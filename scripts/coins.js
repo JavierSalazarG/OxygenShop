@@ -18,7 +18,6 @@ const buttons = (nameButtons, pricesAPI, symbol) => {
     }
     if (nameButtons != buttonEur) {
       let cantPrecingProfessional = (pricesAPI * 25).toFixed(2);
-      console.log(cantPrecingProfessional);
       let cantPrecingPremium = (pricesAPI * 60).toFixed(2);
       precingBasic.innerHTML = `${symbol} 0`;
       precingProfessional.innerHTML = `${symbol}  ${cantPrecingProfessional}`;
@@ -64,12 +63,10 @@ const getCurrency = async (url) => {
       const prices = [data.eur.usd, data.eur.gbp];
       selectionCoins(prices);
     } else {
-      console.error(
-        "Error al obtener los datos. Código de estado: " + response.status
-      );
+      alert("Error al obtener los datos. Código de estado: " + response.status);
     }
   } catch (error) {
-    console.error(
+    alert(
       "Se ha producido un error al realizar la petición a la API: " + error
     );
   }

@@ -1,6 +1,8 @@
 const url = "https:jsonplaceholder.typicode.com/posts";
 const form_contact = document.getElementById("form_contact");
 const div__suscription = document.getElementById("div__suscription");
+const p__suscription = document.getElementById("p__suscription");
+const span__suscription = document.getElementById("span__suscription");
 let validFlagName = false;
 let validFlagMail = false;
 let users = [];
@@ -27,6 +29,8 @@ const cleanFields = (nameInput, mailInput, conditionsInput, div) => {
     nameInput.style.borderBottom = "1px solid black";
     mailInput.style.borderBottom = "1px solid black";
     conditionsInput.style.border = "1px solid black";
+    p__suscription.innerHTML = "We have received your message, thank you!";
+    span__suscription.style.backgroundColor = " #55dfb4";
     div.style.display = "flex";
   }, 300);
   setTimeout(() => {
@@ -54,7 +58,7 @@ form_contact.addEventListener("submit", (event) => {
     conditions.style.border = "2px solid #fb3b64";
   }
 
-  if (validFlagMail && validFlagName) {
+  if (validFlagMail && validFlagName && conditions.checked) {
     users.push({
       name: name.value,
       email: mail.value,
@@ -64,7 +68,12 @@ form_contact.addEventListener("submit", (event) => {
     //ressetear campos a los 3 ms y limpiamos
     cleanFields(name, mail, conditions, div__suscription);
   } else {
-    console.log("Error al validar");
+    div__suscription.style.display = "flex";
+    p__suscription.innerHTML = "Error validating form";
+    span__suscription.style.backgroundColor = "#fb3b64";
+    setTimeout(() => {
+      div__suscription.style.display = "none";
+    }, 4000);
   }
 });
 
@@ -79,14 +88,14 @@ const sendForm = (url, data) => {
     })
       .then((response) => {
         if (!response.ok) {
-          console.log("Error: " + send.status);
+          alert("Error: " + send.status);
         }
       })
       .then(() => {
         console.log("OK" + response);
       });
   } catch (error) {
-    console.error(
+    alert(
       "Se ha producido un error al realizar la petición a la API: " + error
     );
   }
