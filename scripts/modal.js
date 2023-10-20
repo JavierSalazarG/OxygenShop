@@ -1,6 +1,5 @@
 const background = document.getElementById("div__modal");
 const button__esc = document.getElementById("button__esc");
-const span__suscription = document.getElementById("span__suscription");
 const form__newsletter = document.getElementById("form__newsletter");
 const input__newsletter = document.getElementById("input__newsletter");
 

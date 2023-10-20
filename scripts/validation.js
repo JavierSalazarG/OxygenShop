@@ -87,11 +87,12 @@ const sendForm = (url, data) => {
       },
     })
       .then((response) => {
+        console.log(response);
         if (!response.ok) {
           alert("Error: " + send.status);
         }
       })
-      .then(() => {
+      .then((response) => {
         console.log("OK" + response);
       });
   } catch (error) {
