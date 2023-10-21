@@ -88,7 +88,7 @@ const sendForm = (url, data) => {
     })
       .then((response) => {
         console.log(response);
-        if (!response.ok) {
+        if (response.ok) {
           alert("Error: " + send.status);
         }
       })
